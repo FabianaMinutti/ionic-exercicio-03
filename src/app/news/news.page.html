@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>News</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-input type="text" [(ngModel)]="titulo">Digite o título</ion-input>
+    <ion-input type="text" [(ngModel)]="subtitulo">Digite o subtítulo</ion-input>
+    <button (click)="cadastrar(titulo, subtitulo)">Cadastrar</button>
+
+    <li>Título cadastrado: {{ tituloCadastrado }}</li>
+    <li>Subtítulo cadastrado: {{ subtituloCadastrado }}</li>
+</ion-content>
